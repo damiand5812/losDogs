@@ -1,33 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los doggs official page</title>
-    <style> 
-    body { 
-        font-family: 'Courier New', Courier, monospace;
-        background-color: azure;
-    } 
-    header {
-        background-color: lightcyan;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin: 10px;
-        padding: 15px;
-     } 
-     .container {
-        padding: 20px;
-     }
-     footer {
-        margin-top: 10px;
-        padding: 5px;  
-        background-color:rgb(190, 252, 231)    
-     } 
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LosDogs</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #766ee6, #2e0f01);
+      color: white;
+      min-height: 150vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 50px;
+      text-align: center;
+      max-width: 350px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 2.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    
+    }
+
+    .profile-card h1 {
+      font-size: 1.9em ;
+      margin-bottom: 5px;
+      padding: 18px 0px;
+      color: rgb(0, 0, 0);
+    }
+
+    .profile-card p {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      color: #110136;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 20px;
+      padding: 6px 10px;
+      background-color: #eef2f3;
+      border-radius: 5px;
+      text-decoration: none;
+      color: rgb(87, 33, 44);
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background-color: #8dd1da;
+    }
+  </style>
 </head>
 <body>
-    <h1>Pagina oficial de los dogs para dogs y solo dogs. no putas!!!</h1>
-    <a href="https://media.tenor.com/x8v1oNUOmg4AAAAM/rickroll-roll.gif">los doggs-mejores momentos</a>
+  <div class="profile-card">
+    <h1>LosDogs</h1>
+    <p> ¡Síguenos en nuestras redes!</p>
+    <div class="social-links">
+      <a href="damian.html" >Damian</a>
+      <a href="cesar.html" >Cesar(not able)</a>
+      <a href="alejandro.html" >Alej(not able)</a>
+    </div>
+  </div>
 </body>
-<footer>2025 damian productions nigga!</footer>
 </html>
